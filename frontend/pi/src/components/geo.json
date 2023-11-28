@@ -7,7 +7,9 @@
                 "code": "11250",
                 "name": "강동구",
                 "name_eng": "Gangdong-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "7",
+                "centroidY": "31"
             },
             "geometry": {
                 "type": "Polygon",
@@ -199,7 +201,9 @@
                 "code": "11240",
                 "name": "송파구",
                 "name_eng": "Songpa-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "6",
+                "centroidY": "30"
             },
             "geometry": {
                 "type": "Polygon",
@@ -447,7 +451,9 @@
                 "code": "11230",
                 "name": "강남구",
                 "name_eng": "Gangnam-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "2",
+                "centroidY": "30"
             },
             "geometry": {
                 "type": "Polygon",
@@ -671,7 +677,9 @@
                 "code": "11220",
                 "name": "서초구",
                 "name_eng": "Seocho-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "2",
+                "centroidY": "28"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1059,7 +1067,9 @@
                 "code": "11210",
                 "name": "관악구",
                 "name_eng": "Gwanak-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "57",
+                "centroidY": "28"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1331,7 +1341,9 @@
                 "code": "11200",
                 "name": "동작구",
                 "name_eng": "Dongjak-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "56",
+                "centroidY": "30"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1507,7 +1519,9 @@
                 "code": "11190",
                 "name": "영등포구",
                 "name_eng": "Yeongdeungpo-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "53",
+                "centroidY": "31"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1671,7 +1685,9 @@
                 "code": "11180",
                 "name": "금천구",
                 "name_eng": "Geumcheon-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "54",
+                "centroidY": "26"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1883,7 +1899,9 @@
                 "code": "11170",
                 "name": "구로구",
                 "name_eng": "Guro-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "53",
+                "centroidY": "29"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2195,7 +2213,9 @@
                 "code": "11160",
                 "name": "강서구",
                 "name_eng": "Gangseo-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "51",
+                "centroidY": "32"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2515,7 +2535,9 @@
                 "code": "11150",
                 "name": "양천구",
                 "name_eng": "Yangcheon-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "52",
+                "centroidY": "30"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2775,7 +2797,9 @@
                 "code": "11140",
                 "name": "마포구",
                 "name_eng": "Mapo-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "54",
+                "centroidY": "33"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2999,7 +3023,9 @@
                 "code": "11130",
                 "name": "서대문구",
                 "name_eng": "Seodaemun-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "56",
+                "centroidY": "34"
             },
             "geometry": {
                 "type": "Polygon",
@@ -3199,7 +3225,9 @@
                 "code": "11120",
                 "name": "은평구",
                 "name_eng": "Eunpyeong-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "55",
+                "centroidY": "35"
             },
             "geometry": {
                 "type": "Polygon",
@@ -3547,7 +3575,9 @@
                 "code": "11110",
                 "name": "노원구",
                 "name_eng": "Nowon-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "3",
+                "centroidY": "39"
             },
             "geometry": {
                 "type": "Polygon",
@@ -3823,7 +3853,9 @@
                 "code": "11100",
                 "name": "도봉구",
                 "name_eng": "Dobong-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "2",
+                "centroidY": "39"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4055,7 +4087,9 @@
                 "code": "11090",
                 "name": "강북구",
                 "name_eng": "Gangbuk-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "1",
+                "centroidY": "38"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4315,7 +4349,9 @@
                 "code": "11080",
                 "name": "성북구",
                 "name_eng": "Seongbuk-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "1",
+                "centroidY": "35"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4631,7 +4667,9 @@
                 "code": "11070",
                 "name": "중랑구",
                 "name_eng": "Jungnang-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "5",
+                "centroidY": "36"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4807,7 +4845,9 @@
                 "code": "11060",
                 "name": "동대문구",
                 "name_eng": "Dongdaemun-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "2",
+                "centroidY": "34"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4967,7 +5007,9 @@
                 "code": "11050",
                 "name": "광진구",
                 "name_eng": "Gwangjin-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "5",
+                "centroidY": "32"
             },
             "geometry": {
                 "type": "Polygon",
@@ -5091,7 +5133,9 @@
                 "code": "11040",
                 "name": "성동구",
                 "name_eng": "Seongdong-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "2",
+                "centroidY": "33"
             },
             "geometry": {
                 "type": "Polygon",
@@ -5243,7 +5287,9 @@
                 "code": "11030",
                 "name": "용산구",
                 "name_eng": "Yongsan-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "58",
+                "centroidY": "32"
             },
             "geometry": {
                 "type": "Polygon",
@@ -5439,7 +5485,9 @@
                 "code": "11020",
                 "name": "중구",
                 "name_eng": "Jung-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "59",
+                "centroidY": "33"
             },
             "geometry": {
                 "type": "Polygon",
@@ -5631,7 +5679,9 @@
                 "code": "11010",
                 "name": "종로구",
                 "name_eng": "Jongno-gu",
-                "base_year": "2013"
+                "base_year": "2013",
+                "centroidX": "58",
+                "centroidY": "34"
             },
             "geometry": {
                 "type": "Polygon",
