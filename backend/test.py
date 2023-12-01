@@ -250,7 +250,7 @@ def get_bike():
 
 @app.route("/ask_gpt", methods=["POST"])
 def ask_gpt():
-    openai.api_key = "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"
+    openai.api_key = "키 입력"
     # Get the user message from the request
     districtName = request.json.get("district")
     bikeData = request.json.get("selectedBikeInfo")
