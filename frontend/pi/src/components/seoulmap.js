@@ -159,7 +159,13 @@ const SeoulMap = ({ map, selectedBikeInfo }) => {
   return (
     <div>
       {selectedDistrict && selectedBikeInfo && (
-        <Weather district={selectedDistrict} x={centroidX} y={centroidY} />
+        // <Weather district={selectedDistrict} x={centroidX} y={centroidY} />
+        <Weather
+          district={selectedDistrict}
+          x={centroidX}
+          y={centroidY}
+          selectedBikeInfo={selectedBikeInfo}
+        />
       )}
     </div>
   );

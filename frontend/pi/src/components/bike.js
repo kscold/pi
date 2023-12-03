@@ -75,7 +75,9 @@ const BikeMap = ({ map }) => {
           <p>{`자전거 보유 수: ${selectedBikeInfo.parkingBikeTotCnt}`}</p>
         </div>
       )}
+      {/* <SeoulMap map={map} selectedBikeInfo={selectedBikeInfo} /> */}
       <SeoulMap map={map} selectedBikeInfo={selectedBikeInfo} />
+
     </div>
   );
 };

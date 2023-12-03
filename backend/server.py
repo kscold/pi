@@ -47,7 +47,7 @@ height = disp.height
 image = Image.new("1", (width, height))
 draw = ImageDraw.Draw(image)
 
-font_path = "NanumGothic.ttf"
+font_path = "/home/pi/Desktop/pi/backend/NanumGothic.ttf"
 # 한글 폰트 설정
 font = ImageFont.truetype(font_path, 12)  # 폰트 크기는 12로 설정 (조절 가능)
 
@@ -79,7 +79,7 @@ def main_loop():
 
                 # OLED에 메시지 추가
                 draw.rectangle((0, 0, width, height), outline=0, fill=0)  # 이미지 초기화
-                draw.text((0, 40), "놀러가기 좋은 날씨네요:)", font=font, fill=255)
+                draw.text((0, 40), "따릉이 타기 좋은 날씨네요:)", font=font, fill=255)
             elif 10 <= temp < 20:
                 GPIO.output(green_led_pin, GPIO.LOW)
                 GPIO.output(yellow_led_pin, GPIO.HIGH)
@@ -88,8 +88,8 @@ def main_loop():
 
                 # OLED에 메시지 추가
                 draw.rectangle((0, 0, width, height), outline=0, fill=0)  # 이미지 초기화
-                draw.text((0, 40), "쌀쌀한 날씨", font=font, fill=255)
-                draw.text((0, 55), "잘 챙겨입으세요 :|", font=font, fill=255)
+                draw.text((0, 40), "따릉이를 자제해 주세요.", font=font, fill=255)
+                # draw.text((0, 55), "잘 챙겨입으세요 :|", font=font, fill=255)
             else:
                 GPIO.output(green_led_pin, GPIO.LOW)
                 GPIO.output(yellow_led_pin, GPIO.LOW)
@@ -98,7 +98,7 @@ def main_loop():
 
                 # OLED에 메시지 추가
                 draw.rectangle((0, 0, width, height), outline=0, fill=0)  # 이미지 초기화
-                draw.text((0, 40), "야외활동을 자제해주세요X()", font=font, fill=255)
+                draw.text((0, 40), "따릉이 타기 좋지 않습니다.", font=font, fill=255)
 
             # OLED에 데이터 표시
             draw.text((0, 0), "온도: {:.2f} C ".format(temp), font=font, fill=255)

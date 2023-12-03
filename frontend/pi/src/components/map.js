@@ -7,6 +7,8 @@ const { kakao } = window
 function Map() {
   const [map, setMap] = useState(null)
 
+
+
   // 컴포넌트가 마운트되면 실행되는 useEffect
   useEffect(() => {
     // 지도를 표시할 HTML 요소를 가져옴
@@ -28,9 +30,12 @@ function Map() {
   return (
     <div>
       <div id="map" style={{ width: "100%", height: "500px" }}></div>
+      {/* <BikeMap map={map} /> */}
       <BikeMap map={map} />
     </div>
   )
 }
 
 export default Map
+
+

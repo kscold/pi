@@ -1,9 +1,11 @@
 // src/components/weather.js
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import GPT from "./gpt"
 
-function Weather({ district, x, y }) {
+function Weather({ district, x, y, selectedBikeInfo }) {
   const [weather, setWeather] = useState(null);
+  const [piData, setPiData] = useState(null);
 
   useEffect(() => {
     const getWeatherForCoordinate = async () => {
@@ -22,8 +24,21 @@ function Weather({ district, x, y }) {
       }
     };
 
+    const getPiData = async () => {
+      try {
+        const response = await axios.get('http://localhost:4000/get_pi');
+        if (response.status === 200) {
+          const result = response.data;
+          setPiData(result);
+        }
+      } catch (error) {
+        console.error("라즈베리 파이 데이터를 불러오는 중 에러 발생:", error);
+      }
+    };
+
     if (x && y) {
       getWeatherForCoordinate();
+      getPiData();
     }
   }, [x, y]);
 
@@ -40,17 +55,36 @@ function Weather({ district, x, y }) {
 
   return (
     <div>
-      {weather && (
-        <div>
-          <h1>{district}</h1> {/* 행정구역 이름을 표시 */}
-          <p>날짜 및 시간: {formatDate(weather[0], weather[1])}</p>
-          <p>날씨: {weather[2]}</p>
-          <p>기온: {weather[3]}℃</p>
-          <p>습도: {weather[4]}%</p>
-        </div>
-      )}
+      <div style={{ display: "flex", justifyContent: "space-around" }}>
+        {weather && (
+          <div>
+            <h1>{district}</h1> {/* 행정구역 이름을 표시 */}
+            <p>날짜 및 시간: {formatDate(weather[0], weather[1])}</p>
+            <p>날씨: {weather[2]}</p>
+            <p>기온: {weather[3]}℃</p>
+            <p>습도: {weather[4]}%</p>
+          </div>
+        )}
+
+        {piData && (
+          <div>
+            <h2>현재 위치(라즈베리파이 데이터)</h2>
+            <p>온도: {piData.temperature}℃</p>
+            <p>압력: {piData.pressure} Pa</p>
+            <p>고도: {piData.altitude} m</p>
+          </div>
+        )}
+        <GPT
+          district={district}
+          selectedBikeInfo={selectedBikeInfo}
+          weatherData={weather}
+          piData={piData}
+        />
+      </div>
     </div>
   );
 }
 
 export default Weather;
+
+
